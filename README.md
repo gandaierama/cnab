@@ -4,20 +4,32 @@ O CNAB (Centro Nacional de Automação Bancária) é, basicamente, uma espécie 
 
 ## Techs
 
-Docker - Node.js - Next.js - Nest.js
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+
+![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
 
 ## Get Start
 
 ```bash
 # Start
 $ docker-compose up
-
+```
+```bash
 # Re-build
 $ docker-compose up --build
-
+```
+```bash
 # Stop
 $ docker-compose down
 ```
+
+## Let's see
+
+http://localhost
 
 ## Stay in touch
 
