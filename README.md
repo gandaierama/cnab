@@ -1,11 +1,12 @@
-#Processador de arquivo CNAB
+# Processador de arquivo CNAB
 
+O CNAB (Centro Nacional de Automação Bancária) é, basicamente, uma espécie de software capaz de manter uma interface de informaçōes digitais entre os bancos e seus clientes, seguindo alguns padrōes definidos pela Febraban (Federação Brasileira de Bancos).
 
-##Techs
+## Techs
 
 Docker - Node.js - Next.js - Nest.js
 
-##Get Start
+## Get Start
 
 ```bash
 # Start
