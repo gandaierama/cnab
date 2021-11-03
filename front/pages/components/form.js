@@ -5,14 +5,17 @@ import { useForm } from 'react-hook-form'
 
 const FormUp = () => {
 const [ id, setId] = useState()
+const [ visible, setVisible] = useState(false)
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm()
   const onSubmit = ({ ident, file, remember }) => {
-    // You should handle login logic with username, password and remember form data
-    setId({ id: ident })
+    setId({ id: ident });
+    setVisible(true);
+    console.log(file);
+
   }
   return (
     <div className="container">
@@ -38,7 +41,7 @@ const [ id, setId] = useState()
       <input type="file" placeholder='Last Name' />
     </Form.Field>
     <Form.Field>
-      <Checkbox label='I agree to the Terms and Conditions' />
+      <Checkbox label='Aceito testar' />
     </Form.Field>
     <Button type='submit'>Enviar</Button>
   </Form>

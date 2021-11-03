@@ -19,10 +19,6 @@ export class CnabController {
   }
 
 
-  @Post()
-  create(@Body() createCnabDto: CreateCnabDto) {
-    return this.cnabService.create(createCnabDto);
-  }
 
   @Get()
   findAll() {
@@ -34,10 +30,7 @@ export class CnabController {
     return this.cnabService.findOne(+id);
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateCnabDto: UpdateCnabDto) {
-    return this.cnabService.update(+id, updateCnabDto);
-  }
+
 
   @Delete(':id')
   remove(@Param('id') id: string) {

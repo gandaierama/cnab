@@ -1,26 +1,27 @@
 import { Injectable } from '@nestjs/common';
 import { CreateCnabDto } from './dto/create-cnab.dto';
 import { UpdateCnabDto } from './dto/update-cnab.dto';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { CNAB } from './entities/cnab.entity';
+
 
 @Injectable()
 export class CnabService {
-  create(createCnabDto: CreateCnabDto) {
-    return 'This action adds a new cnab';
+  constructor(
+    @InjectRepository(CNAB)
+    private cnabRepository: Repository<CNAB>,
+  ) {}
+
+  findAll(): Promise<CNAB[]> {
+    return this.cnabRepository.find();
   }
 
-  findAll() {
-    return `This action returns all cnab`;
+  findOne(id): Promise<CNAB> {
+    return this.cnabRepository.findOne(id);
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} cnab`;
-  }
-
-  update(id: number, updateCnabDto: UpdateCnabDto) {
-    return `This action updates a #${id} cnab`;
-  }
-
-  remove(id: number) {
-    return `This action removes a #${id} cnab`;
+  async remove(id): Promise<void> {
+    await this.cnabRepository.delete(id);
   }
 }
