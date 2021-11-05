@@ -31,13 +31,13 @@ Página em construção    </p>
               Aqui na TSD possuímos o plano que melhor se encaixa no seu negócio, horários flexíveis para suas demandas de trabalho, ou entregas a parte de acordo com a sua necessidade.
             </p>
             
-            </hr>
+            <hr/>
             <h2>
-              Terceirize seu Delivery.</brt>
+              Terceirize seu Delivery.<br/>
               Atendemos todo o estado de São Paulo
             </h2>
             <p>
-              (11) 5574-0808</br>
+              (11) 5574-0808<br/>
               (11) 95868-8931
             </p>
             <h2>MODELOS DE ENTREGA</h2>
