@@ -1,15 +1,15 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 
 @Entity()
-export class CNAB {
+export class Cnab {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  file: string;
+  ident: string;
 
   @Column()
-  ident: string;
+  file: string;
 
   @Column({ default: true })
   isActive: boolean;

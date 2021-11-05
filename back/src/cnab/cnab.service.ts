@@ -11,8 +11,11 @@ export class CnabService {
   constructor(
     @InjectRepository(CNAB)
     private cnabRepository: Repository<CNAB>,
+    
   ) {}
-
+ create(body) {
+    return this.cnabRepository.create(body);
+  }
   findAll(): Promise<CNAB[]> {
     return this.cnabRepository.find();
   }

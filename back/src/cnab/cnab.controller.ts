@@ -1,10 +1,18 @@
-import { Controller,UploadedFile,
-  UseInterceptors, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+
+import {
+  Body,
+  Controller,
+  Get,
+  Post,
+  UploadedFile,
+  UseInterceptors,
+} from '@nestjs/common';
+
 import { CnabService } from './cnab.service';
 import { CreateCnabDto } from './dto/create-cnab.dto';
 import { UpdateCnabDto } from './dto/update-cnab.dto';
 import { FileInterceptor } from '@nestjs/platform-express';
-
+import { Express } from 'express';
 
 @Controller('cnab')
 export class CnabController {
@@ -12,10 +20,16 @@ export class CnabController {
 
 
 
-  @Post('upload')
   @UseInterceptors(FileInterceptor('file'))
-  uploadFile(@UploadedFile() file: Express.Multer.File) {
-    console.log(file);
+  @Post('file')
+  uploadFile(
+    @Body() body: CreateCnabDto,
+    @UploadedFile() file: Express.Multer.File,
+  ) {
+    return {
+      body,
+      file: file.buffer.toString()
+    };
   }
 
 
@@ -30,10 +44,4 @@ export class CnabController {
     return this.cnabService.findOne(+id);
   }
 
-
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.cnabService.remove(+id);
-  }
 }

@@ -1,1 +1,3 @@
-export class CreateCnabDto {}
+export class CreateCnabDto {
+  ident: string;
+}
