@@ -342,4 +342,4 @@ Atendemos todo o estado de São Paulo
   </ResponsiveContainer>
 )
 
-export default 
+export default HomepageLayout
