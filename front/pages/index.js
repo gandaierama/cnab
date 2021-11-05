@@ -22,15 +22,26 @@ Página em construção    </p>
 
   <Segment.Group> 
     <Segment>  
-      <Grid centered columns={1} container divided stackable>
+      <Grid centered columns={1} >
         <Grid.Column>  
           <Container fluid> 
            
-            <h2>TSD Motoboys</h2>
+            <h1>TSD Motoboys</h1>
             <p>
               Aqui na TSD possuímos o plano que melhor se encaixa no seu negócio, horários flexíveis para suas demandas de trabalho, ou entregas a parte de acordo com a sua necessidade.
             </p>
             
+            </hr>
+            <h2>
+              Terceirize seu Delivery.</brt>
+              Atendemos todo o estado de São Paulo
+            </h2>
+            <p>
+              (11) 5574-0808</br>
+              (11) 95868-8931
+            </p>
+            <h2>MODELOS DE ENTREGA</h2>
+            <p>Aqui na TSD possuímos o plano que melhor se encaixa no seu negócio, horários flexíveis para suas demandas de trabalho, ou entregas a parte de acordo com a sua necessidade.</p>
           </Container>
         </Grid.Column>
    
