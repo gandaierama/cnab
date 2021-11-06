@@ -224,7 +224,7 @@ const HomepageLayout = () => (
             
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
-            <Image size='medium' src='logo.png' />
+            <Image size='medium' src='jaq.png' />
           </Grid.Column>
         </Grid.Row>
      
