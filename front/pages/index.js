@@ -255,30 +255,22 @@ const HomepageLayout = () => (
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
-            <Grid.Column width={3}>
+            <Grid.Column width={5}>
               <Header inverted as='h4' content='About' />
               <List link inverted>
-                <List.Item as='a'>Sitemap</List.Item>
-                <List.Item as='a'>Contact Us</List.Item>
-                <List.Item as='a'>Religious Ceremonies</List.Item>
-                <List.Item as='a'>Gazebo Plans</List.Item>
+                <List.Item as='a'>Serviços</List.Item>
+                <List.Item as='a'>Empresa</List.Item>
+                <List.Item as='a'>Preços</List.Item>
+                <List.Item as='a'>Contato</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Services' />
-              <List link inverted>
-                <List.Item as='a'>Banana Pre-Order</List.Item>
-                <List.Item as='a'>DNA FAQ</List.Item>
-                <List.Item as='a'>How To Access</List.Item>
-                <List.Item as='a'>Favorite X-Men</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={7}>
+    
+            <Grid.Column width={8}>
               <Header as='h4' inverted>
                 TSD
               </Header>
               <p>
-                Aqui na TSD possuímos o plano que melhor se encaixa no seu negócio, horários flexíveis para suas demandas de trabalho, ou entregas a parte de acordo com a sua necessidade.
+                Terceirize os motoboys de seu delivery e dê qualidade aos seus serviços de entregas.
               </p>
             </Grid.Column>
           </Grid.Row>
