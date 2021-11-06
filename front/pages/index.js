@@ -37,7 +37,7 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as='h1'
-      content='Imagine-a-Company'
+      content='TSD'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -48,7 +48,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Do whatever you want when you want to.'
+      content='Terceirize seu Delivery.'
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -105,9 +105,9 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a' active>
                   Home
                 </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
+                <Menu.Item as='a'>Serviços</Menu.Item>
+                <Menu.Item as='a'>Empresa</Menu.Item>
+                <Menu.Item as='a'>Preços</Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
                     Entrar
@@ -157,9 +157,10 @@ class MobileContainer extends Component {
             <Menu.Item as='a' active>
               Home
             </Menu.Item>
-            <Menu.Item as='a'>Work</Menu.Item>
-            <Menu.Item as='a'>Company</Menu.Item>
-            <Menu.Item as='a'>Careers</Menu.Item>
+            <Menu.Item as='a'>Serviços</Menu.Item>
+            <Menu.Item as='a'>Empresa</Menu.Item>
+            <Menu.Item as='a'>Preços</Menu.Item>
+            <Menu.Item as='a'>App</Menu.Item>
             <Menu.Item as='a'>Log in</Menu.Item>
             <Menu.Item as='a'>Sign Up</Menu.Item>
           </Sidebar>
@@ -224,7 +225,7 @@ const HomepageLayout = () => (
           <Grid.Column width={8}>
             <Header as='h3' style={{ fontSize: '2em' }}>
               Terceirize seu Delivery.
-Atendemos todo o estado de São Paulo
+                Atendemos todo o estado de São Paulo
             </Header>
             <p style={{ fontSize: '1.33em' }}>
               Aqui na TSD possuímos o plano que melhor se encaixa no seu negócio, horários flexíveis para suas demandas de trabalho, ou entregas a parte de acordo com a sua necessidade.
@@ -244,7 +245,7 @@ Atendemos todo o estado de São Paulo
         </Grid.Row>
         <Grid.Row>
           <Grid.Column textAlign='center'>
-            <Button size='huge'>Check Them Out</Button>
+            <Button size='huge'>Confira!</Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -272,10 +273,13 @@ Atendemos todo o estado de São Paulo
       </Grid>
     </Segment>
 
+
+
+
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
         <Header as='h3' style={{ fontSize: '2em' }}>
-          Breaking The Grid, Grabs Your Attention
+          Terceirize seu Delivery
         </Header>
         <p style={{ fontSize: '1.33em' }}>
           Aqui na TSD possuímos o plano que melhor se encaixa no seu negócio, horários flexíveis para suas demandas de trabalho, ou entregas a parte de acordo com a sua necessidade.
@@ -290,7 +294,7 @@ Atendemos todo o estado de São Paulo
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          <a href='#'>Case Studies</a>
+          <a href='#'>Terceirize seu Delivery</a>
         </Divider>
 
         <Header as='h3' style={{ fontSize: '2em' }}>
@@ -300,7 +304,7 @@ Atendemos todo o estado de São Paulo
           Aqui na TSD possuímos o plano que melhor se encaixa no seu negócio, horários flexíveis para suas demandas de trabalho, ou entregas a parte de acordo com a sua necessidade.
         </p>
         <Button as='a' size='large'>
-          I'm Still Quite Interested
+          Terceirize seu Delivery
         </Button>
       </Container>
     </Segment>
