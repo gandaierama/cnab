@@ -34,28 +34,19 @@ const { MediaContextProvider, Media } = createMedia({
  * components for such things.
  */
 const HomepageHeading = ({ mobile }) => (
-  <Container text>
+  <Container text >
     <Header
       as='h1'
-      content='TSD'
+      content='Terceirize seu Delivery.'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
         fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
+        marginBottom: '0.5em',
+        marginTop: mobile ? '1.5em' : '3em'
       }}
     />
-    <Header
-      as='h2'
-      content='Terceirize seu Delivery.'
-      inverted
-      style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.5em' : '1.5em',
-      }}
-    />
+
     <Button primary size='huge'>
       Get Started
       <Icon name='right arrow' />
@@ -74,7 +65,7 @@ HomepageHeading.propTypes = {
 class DesktopContainer extends Component {
   state = {}
 
-  hideFixedMenu = () => this.setState({ fixed: false })
+  hideFixedMenu = () => this.setState({ fixed: true })
   showFixedMenu = () => this.setState({ fixed: true })
 
   render() {
@@ -91,7 +82,7 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em' }}
+            style={{ minHeight: 700, padding: '1em 0em',background: 'url(banner.png)', backgroundSize: 'cover'}}
             vertical
           >
             <Menu
@@ -102,8 +93,8 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
-                <Menu.Item as='a' active>
-                  Home
+                <Menu.Item as='a' >
+                  <Image style={{width: '80px'}} src='logo.png' />
                 </Menu.Item>
                 <Menu.Item as='a'>Serviços</Menu.Item>
                 <Menu.Item as='a'>Empresa</Menu.Item>
@@ -155,7 +146,7 @@ class MobileContainer extends Component {
             visible={sidebarOpened}
           >
             <Menu.Item as='a' active>
-              Home
+              <Image size='small' src='logo.png' />
             </Menu.Item>
             <Menu.Item as='a'>Serviços</Menu.Item>
             <Menu.Item as='a'>Empresa</Menu.Item>
@@ -207,7 +198,7 @@ const ResponsiveContainer = ({ children }) => (
    * For large applications it may not be best option to put all page into these containers at
    * they will be rendered twice for SSR.
    */
-  <MediaContextProvider>
+  <MediaContextProvider  >
     <DesktopContainer>{children}</DesktopContainer>
     <MobileContainer>{children}</MobileContainer>
   </MediaContextProvider>
@@ -230,75 +221,26 @@ const HomepageLayout = () => (
             <p style={{ fontSize: '1.33em' }}>
               Aqui na TSD possuímos o plano que melhor se encaixa no seu negócio, horários flexíveis para suas demandas de trabalho, ou entregas a parte de acordo com a sua necessidade.
             </p>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              PESQUISE PELO PERÍODO DESEJADO: MANHÃ, ALMOÇO, NOITE OU MADRUGADA
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              
-(11) 5574-0808
- (11) 95868-8931
-            </p>
+            
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='/images/wireframe/white-image.png' />
+            <Image size='medium' src='logo.png' />
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row>
-          <Grid.Column textAlign='center'>
-            <Button size='huge'>Confira!</Button>
-          </Grid.Column>
-        </Grid.Row>
+     
       </Grid>
     </Segment>
 
-    <Segment style={{ padding: '0em' }} vertical>
-      <Grid celled='internally' columns='equal' stackable>
-        <Grid.Row textAlign='center'>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "Terceirize seu Delivery."
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              Aqui na TSD possuímos o plano que melhor se encaixa no seu negócio, horários flexíveis para suas demandas de trabalho, ou entregas a parte de acordo com a sua necessidade.
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
-
+ 
 
 
 
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
+
+
         <Header as='h3' style={{ fontSize: '2em' }}>
           Terceirize seu Delivery
-        </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Aqui na TSD possuímos o plano que melhor se encaixa no seu negócio, horários flexíveis para suas demandas de trabalho, ou entregas a parte de acordo com a sua necessidade.
-        </p>
-        <Button as='a' size='large'>
-          Read More
-        </Button>
-
-        <Divider
-          as='h4'
-          className='header'
-          horizontal
-          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-        >
-          <a href='#'>Terceirize seu Delivery</a>
-        </Divider>
-
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Did We Tell You About Our Bananas?
         </Header>
         <p style={{ fontSize: '1.33em' }}>
           Aqui na TSD possuímos o plano que melhor se encaixa no seu negócio, horários flexíveis para suas demandas de trabalho, ou entregas a parte de acordo com a sua necessidade.
