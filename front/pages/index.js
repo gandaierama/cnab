@@ -47,9 +47,11 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '1.5em' : '3em'
       }}
     />
-    <h2>YKIoLFhnboI</h2>
+    <h2>(11) 5574-0808<br/>
+ (11) 95868-8931</h2>
+
     <Button primary size='huge'>
-      Get Started
+      Entre em contato 
       <Icon name='right arrow' />
     </Button>
   </Container>
