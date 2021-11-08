@@ -47,7 +47,7 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '1.5em' : '3em'
       }}
     />
-
+    <h2>YKIoLFhnboI</h2>
     <Button primary size='huge'>
       Get Started
       <Icon name='right arrow' />
@@ -253,7 +253,7 @@ Gostaria de orçamento sem compromisso ?
             
             source='youtube'
           />
-          YKIoLFhnboI
+          
         </div>
         <Button as='a' size='large'>
           Entre em contato
