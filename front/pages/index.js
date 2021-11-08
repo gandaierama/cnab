@@ -241,6 +241,14 @@ Gostaria de orçamento sem compromisso ?
     </Segment>
 
  
+    <Segment style={{ padding: '8em 0em' }} vertical>
+      <Container text>
+
+
+        <Image style={{ width: '100%' }} src='cartaz.jpeg' />
+      </Container>
+    </Segment>
+
 
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
