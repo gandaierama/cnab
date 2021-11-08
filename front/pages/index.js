@@ -19,6 +19,7 @@ import {
   Segment,
   Sidebar,
   Visibility,
+  Embed
 } from 'semantic-ui-react'
 
 const { MediaContextProvider, Media } = createMedia({
@@ -219,9 +220,15 @@ const HomepageLayout = () => (
                 Atendemos todo o estado de São Paulo
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              Aqui na TSD possuímos o plano que melhor se encaixa no seu negócio, horários flexíveis para suas demandas de trabalho, ou entregas a parte de acordo com a sua necessidade.
+
+
+Terceirizamos motoboys fixos para delivery,  garantia reposição,  motoboy reserva, moto extra em dias de maior movimento e tudo isso com rastreio e acompanhamento em tempo real.
+<br/>
+Gostaria de orçamento sem compromisso ?
             </p>
-            
+            <Button as='a' size='large'>
+          Entre em contato
+        </Button>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
             <Image size='medium' src='jaq.png' />
@@ -233,7 +240,26 @@ const HomepageLayout = () => (
 
  
 
+    <Segment style={{ padding: '8em 0em' }} vertical>
+      <Container text>
 
+
+        <Header as='h3' style={{ fontSize: '2em' }}>
+          TSD Motoboys
+        </Header>
+        <div>
+          <Embed
+            id='YKIoLFhnboI'
+            
+            source='youtube'
+          />
+          YKIoLFhnboI
+        </div>
+        <Button as='a' size='large'>
+          Entre em contato
+        </Button>
+      </Container>
+    </Segment>
 
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
