@@ -67,15 +67,15 @@ services:
       - core_service_network
     volumes:
       - ./certbot/conf:/etc/letsencrypt
-      - ./certbot/logs:/var/log/letsencrypt
-      - ./certbot/data:/var/www/certbot
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
   certbot:
-    image: certbot/certbot:latest
-    command: certonly --webroot --webroot-path=/var/www/certbot --email danielbatistagalvao@homail.com --agree-tos --no-eff-email -d tsdmotoboys.com.br -d www.tsdmotoboys.com.br
+    image: certbot/certbot
+    restart: unless-stopped
     volumes:
-      - ./certbot/conf:/etc/letsencrypt
-      - ./certbot/logs:/var/log/letsencrypt
-      - ./certbot/data:/var/www/certbot
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+
 networks:
   core_service_network:
     driver: bridge
