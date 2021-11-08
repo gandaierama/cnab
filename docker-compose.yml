@@ -66,12 +66,12 @@ services:
     networks:
       - core_service_network
   certbot:
-        image: certbot/certbot:latest
-        command: certonly --webroot --webroot-path=/var/www/certbot --email danielbatistagalvao@homail.com --agree-tos --no-eff-email -d tsdmotoboys.com.br -d www.tsdmotoboys.com.br
-        volumes:
-            - ./certbot/conf:/etc/letsencrypt
-            - ./certbot/logs:/var/log/letsencrypt
-            - ./certbot/data:/var/www/certbot
+    image: certbot/certbot:latest
+    command: certonly --webroot --webroot-path=/var/www/certbot --email danielbatistagalvao@homail.com --agree-tos --no-eff-email -d tsdmotoboys.com.br -d www.tsdmotoboys.com.br
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/logs:/var/log/letsencrypt
+      - ./certbot/data:/var/www/certbot
 networks:
   core_service_network:
     driver: bridge
