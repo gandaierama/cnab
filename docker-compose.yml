@@ -62,19 +62,8 @@ services:
     container_name: nginx
     ports:
       - 80:80
-      - 443:443
     networks:
       - core_service_network
-    volumes:
-      - ./data/certbot/conf:/etc/letsencrypt
-      - ./data/certbot/www:/var/www/certbot
-  certbot:
-    image: certbot/certbot
-    restart: unless-stopped
-    volumes:
-      - ./data/certbot/conf:/etc/letsencrypt
-      - ./data/certbot/www:/var/www/certbot
-
 networks:
   core_service_network:
     driver: bridge
