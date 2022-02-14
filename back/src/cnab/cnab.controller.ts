@@ -6,6 +6,7 @@ import {
   Post,
   UploadedFile,
   UseInterceptors,
+  Param
 } from '@nestjs/common';
 
 import { CnabService } from './cnab.service';

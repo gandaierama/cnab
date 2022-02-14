@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 
 @Entity()
-export class Cnab {
+export class CNAB {
   @PrimaryGeneratedColumn()
   id: number;
 
